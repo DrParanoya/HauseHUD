@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "hause-hud",
+  "version": "${version}",
+  "name": "HauseHUD",
+  "description": "Renders images onto your screen to block your vision.",
+  "authors": [
+    "Drparanoya"
+  ],
+  "contact": {
+    "repo": "https://github.com/DrParanoya/HauseHUD"
+  },
+  "icon": "assets/hausehud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "drparanoya.hausehud.addon.HauseHUD"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
